@@ -1,0 +1,36 @@
+{
+  "name": "@johngw/error",
+  "version": "2.2.1",
+  "description": "JS/TS Error handling utilities.",
+  "main": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn clean && yarn tsc && rimraf --glob 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "clean": "rimraf dist",
+    "start": "yarn tsc --watch --preserveWatchOutput",
+    "test": "yarn jest"
+  },
+  "author": "John Wright <johngeorge.wright@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/js-util/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/js-util#readme",
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "9.0.2",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.7",
+    "@semantic-release/release-notes-generator": "11.0.1",
+    "@types/jest": "29.5.1",
+    "jest": "29.5.0",
+    "rimraf": "5.0.0",
+    "semantic-release": "21.0.2",
+    "semantic-release-monorepo": "7.0.5",
+    "ts-jest": "29.1.0",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0"
+  }
+}
